@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <color android:color="@color/blue" /> <!-- Change this color to your desired pressed color -->
+    </item>
+    <!-- Focused state (e.g., when navigating using a keyboard) -->
+    <item android:state_focused="true">
+        <color android:color="@color/blue" /> <!-- Change this color to your desired focused color -->
+    </item>
+</selector>

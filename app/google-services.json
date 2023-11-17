@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "297271717003",
+    "project_id": "miet-database",
+    "storage_bucket": "miet-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297271717003:android:b0ea878f7c0ada64d3788e",
+        "android_client_info": {
+          "package_name": "com.example.miet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4xNv8AAbVzUGLTdHgOQPfZZ50wLAQsPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

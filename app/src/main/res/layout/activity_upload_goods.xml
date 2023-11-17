@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadGoods"
+    android:background="@drawable/bg">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Donation"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_credit_card_24" />
+
+            <EditText
+            android:id="@+id/etOrganisation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border"
+            android:padding="16dp"
+            android:hint="Enter Organisation"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            android:textColorHint="@color/blue" />
+
+            <EditText
+                android:id="@+id/etAmount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:padding="16dp"
+                android:hint="Amount"
+                android:textColor="@color/black"
+                android:gravity="start|center_vertical"
+                android:textColorHint="@color/blue" />
+
+            <EditText
+                android:id="@+id/etCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:hint="Card Number"
+                android:textColor="@color/black"
+                android:gravity="start|center_vertical"
+                android:textColorHint="@color/blue" />
+
+            <!-- Horizontal LinearLayout for Expiry Date and CVV -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/etExpiryDate"
+                    android:layout_width="83dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Expiry Date (MM/YY)"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:textColorHint="@color/blue" />
+
+                <EditText
+                    android:id="@+id/etCVV"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/border"
+                    android:gravity="start|center_vertical"
+                    android:hint="CVV"
+                    android:textColor="@color/black"
+                    android:padding="16dp"
+                    android:textColorHint="@color/blue" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Pay Now"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:id="@+id/saveButton"
+                android:layout_marginTop="10dp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
